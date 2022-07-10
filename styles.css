@@ -1,14 +1,10 @@
 button {
     width: 64px;
     height: 64px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 20px;
     text-align: center;
     font-family: 'Open Sans', 'Roboto', 'sans-serif';
-}
-
-.body {
-    font-family:'Open Sans';
 }
 
 .operation {
@@ -20,31 +16,62 @@ button {
     background-color: orange;
 }
 
-.container {
-    width: 274px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: gray;
+
+body {
+    font-family:'Open Sans';
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: lightcyan;
+}
+
+
+.main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.container {
+    flex: 1;
+    max-width: 274px;
+    padding: 10px;
+    background-color: gray;
+    
     border: 10px solid black;
-    box-shadow: 5px 10px black;
-    gap: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 
 .display {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
     background-color: darkgray;
     padding-right: 10px;
-    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Open Sans', 'Roboto', 'sans-serif';
+    color: white;
+    text-align: right;
 }
 
 .display-text {
-    font-family: 'Open Sans', 'Roboto', 'sans-serif';
+    flex: 1 0 auto;
     font-size: 32px;
-    color: white;
-    text-align: right;
-    border: 2px solid black;
+    word-wrap: break-word;
+}
+
+.display-operations {
+    flex: 1 0 auto; 
+    font-size: 16px;
+    word-wrap: break-word;
 }
 
 .button-container {
@@ -57,4 +84,13 @@ button {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.top-row-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 5px;
+}
+
+.control {
+    flex: 1;
 }
