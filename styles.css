@@ -1,0 +1,16 @@
+button {
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.operation {
+    background-color: crimson;
+    color: white;
+}
+
+.control {
+    background-color: orange;
+}
