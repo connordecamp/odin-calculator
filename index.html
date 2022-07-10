@@ -6,38 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css" />
+    <!--Add Open Sans font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <script src="scripts.js" defer></script>
-    <div id="container">
-        <div id="display">
-            <p class="display-text">0</p>
+    <div class="container">
+        <div class="display display-text">
+            0
         </div>
-        <div id="button-container">
-            <div id="top-row-buttons">
+        <div class="button-container">
+            <div class="top-row-buttons">
                 <button id="clear-button" class="control">AC</button>
                 <button id="back-button" class="control">BACK</button>
             </div>
-            <div id="button-grid">
-                <div id="first-row">
+            <div class="button-grid">
+                <div class="first-row">
                     <button id="number7" class="number">7</button>
                     <button id="number8" class="number">8</button>
                     <button id="number9" class="number">9</button>
                     <button id="opDivision" class="operation">/</button>
                 </div>
-                <div id="second-row">
+                <div class="second-row">
                     <button id="number4" class="number">4</button>
                     <button id="number5" class="number">5</button>
                     <button id="number6" class="number">6</button>
                     <button id="opTimes" class="operation">*</button>
                 </div>
-                <div id="third-row">
+                <div class="third-row">
                     <button id="number1" class="number">1</button>
                     <button id="number2" class="number">2</button>
                     <button id="number3" class="number">3</button>
                     <button id="opSubtract" class="operation">-</button>
                 </div>
-                <div id="fourth-row">
+                <div class="fourth-row">
                     <button id="number0" class="number">0</button>
                     <button id="opDecimal" class="operation">.</button>
                     <button id="opEquals" class="operation">=</button>
